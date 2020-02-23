@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1280px;
+}
+
+header {
+    background-color: #000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 2%;
+}
+
+header .logo {
+    position: relative;
+    left: 50px;
+}
+
+nav.desktop-menu {
+    position: relative;
+    top: 20px;
+}
+
+nav.desktop-menu ul {
+    display: flex;
+    list-style: none;
+}
+
+nav.desktop-menu ul li:first-of-type a {
+    color: #eb2d2d;
+    font-weight: bold;
+}
+
+nav.desktop-menu ul li {
+    padding: 30px 20px;
+    font-size: 20px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+nav.desktop-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section.banner {
+    width: 100%;
+    height: 650px;
+    background-color: #000;
+    background-image: url('../images/bg.jpg');
+    background-size: contain;
+    background-position: right top;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border-bottom: 5px solid #eb2d2d;
+}
+
+.banner-text {
+    padding: 70px;
+}
+
+.banner-text-item {
+    margin-top: 30px;
+    padding-left: 50px;
+    width: 314px;
+    height: 70px;
+    line-height: 70px;
+    font-style: italic;
+    font-size: 23px;
+    text-transform: uppercase;
+    color: #fff;
+    background-image: url('../images/box-text.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.banner-text-item:nth-of-type(2) {
+    position: relative;
+    left: -10px;
+    width: 200px;
+}
+
+.banner-text-item:nth-of-type(3) {
+    position: relative;
+    left: -20px;
+    width: 170px;
+}
+
+.banner-text-item:nth-of-type(4) {
+    position: relative;
+    left: -30px;
+    height: 50px;
+    line-height: 50px;
+    text-transform: lowercase;
+    color: #000;
+    background-image: url('../images/box-white-text.png');
+}
+
+@media screen and (max-width: 768px) {
+    section.banner {
+        height: 80vh;
+        background-size: cover;
+        background-position: 100px center;
+    }
+
+    nav.desktop-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .banner-text {
+        padding: 30px;
+    }
+
+    .banner-text-item {
+        width: 240px;
+        font-size: 18px;
+    }
+
+    .banner-text-item:nth-of-type(4) {
+        width: 270px;
+    }
+}
