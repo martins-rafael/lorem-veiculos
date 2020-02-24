@@ -150,6 +150,67 @@ section.banner {
     background-image: url('../images/box-white-text.png');
 }
 
+section.destaque {
+    padding: 0 2% 90px 2%;
+    background-color: rgb(230, 220, 220);
+}
+section.destaque > h2 {
+    padding: 60px 0;
+    font-size: 27px;
+    font-style: italic;
+    text-align: center;
+    text-transform: uppercase;
+    color: #192123;
+    border-bottom: 3px solid #192123;
+}
+
+section.destaque .container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.destaque-veiculo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+}
+
+.destaque-veiculo .destaque-veiculo-img {
+    padding-top: 40%;
+    width: 80%;
+    background-size: 100% 100%;
+    border-radius: 5px 5px 0 0; 
+}
+
+.destaque-veiculo-info {
+    padding: 20px;
+    width: 80%;
+    background-color: #eb2d2d;
+    border-radius: 0 0 5px 5px;
+    transition: 0.5S;
+}
+
+.destaque-veiculo-info a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.destaque-veiculo-info h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.destaque-veiculo-info p {
+    font-size: 14px;
+}
+
+.destaque-veiculo-info:hover {
+    background-color: #192123;
+
+}
+
 @media screen and (max-width: 768px) {
     header .logo {
         padding-left: 30px;
@@ -168,6 +229,16 @@ section.banner {
         background-size: cover;
         background-position: 100px center;
     }
+
+    section.destaque .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .destaque-veiculo {
+        width: 90%;
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width: 580px) {
@@ -183,4 +254,13 @@ section.banner {
     .banner-text-item:nth-of-type(4) {
         width: 270px;
     }
+
+    section.destaque > h2 {
+        font-size: 23px;
+    }
+
+    .destaque-veiculo {
+        width: 100%;
+    }
+
 }
