@@ -66,11 +66,6 @@ nav.menu-style ul li a {
     color: #fff;
 }
 
-nav.menu-style ul li:first-of-type a {
-    color: #eb2d2d;
-    font-weight: bold;
-}
-
 nav.mobile-menu {
     display: none;
     margin-top: 30px;
@@ -308,6 +303,13 @@ section.contato form textarea {
     resize: none;
 }
 
+section.contato form input[type=text],
+section.contato form input[type=email],
+section.contato form input[type=number],
+section.contato form textarea:focus {
+    outline: none;
+}
+
 section.contato form .input-wraper:nth-of-type(5) {
     text-align: center;
 }
@@ -337,6 +339,23 @@ footer .container {
 footer p {
     padding: 30px;
     color: #fff;
+}
+
+section.vendas {
+    padding: 0 2% 90px 2%;
+    min-height: 90%;
+    background-color: rgb(230, 220, 220);
+}
+
+section.vendas .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+section.vendas .destaque-veiculo {
+    margin-bottom: 40px;
 }
 
 @media screen and (max-width: 768px) {
