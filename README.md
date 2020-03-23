@@ -1,9 +1,25 @@
-## Projeto 05
-Versão personalizada do projeto 05, desenvolvida com HTML5 e CSS3.
+<h1 align="center">
+<br>
+Projeto 05
+<br>
+<br>
+  <img src="screenshot-01.png" alt="screenshot" >
+</h1>
 
-### Screenshots
-  ### Main Page
-![mockup](https://i.ibb.co/GMvQDCy/projeto05-mockup-01.png)
-![mockup](https://i.ibb.co/RyXK4dM/projeto05-mockup-02.png)
-![mockup](https://i.ibb.co/7CGFqQ9/projeto05-mockup-03.png)
-![mockup](https://i.ibb.co/MS9dvSs/projeto05-mockup-04.png)
+## :rocket: Sobre
+
+Versão personalizada do projeto 05 desenvolvido no curso, Página de Venda de Automóveis.
+
+## :computer: Tecnologias
+- [HTML](https://devdocs.io/html/)
+- [CSS](https://devdocs.io/css/)
+- [Responsive Web Design](https://www.w3schools.com/html/html_responsive.asp)
+
+### :camera: Mais screenshots
+
+<h1 align="center">
+<br>
+  <img src="screenshot-02.png" alt="screenshot" >
+  <img src="screenshot-03.png" alt="screenshot" >
+  <img src="screenshot-04.png" alt="screenshot" >
+</h1>
