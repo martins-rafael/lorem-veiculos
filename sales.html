@@ -12,21 +12,20 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--[if IE]><link rel="shortcut icon" href="images/favicon.ico"><![endif]-->
     <link rel="icon" href="images/favicon.ico">
-    <title>Lorem Ipsum Veículos</title>
+    <title>Vendas | Lorem Ipsum Veículos</title>
 </head>
 
 <body>
-    <section class="banner">
-    <header id="top-of-page">
+    <header class="dark-header" id="top-of-page">
         <div class="container">
             <div class="logo">
-                <img src="images/logo.png" alt="Logotipo de Lorem Ipsum Veículos">
+                <a href="index.html"><img src="images/logo.png" alt="Logotipo de Lorem Ipsum Veículos"></a>
             </div>
 
             <nav class="desktop-menu menu-style">
                 <ul>
-                    <li><a style="color: #eb2d2d; font-weight: bold" class="top-selected">home</a></li>
-                    <li><a href="sales.html">vendas</a></li>
+                    <li><a href="index.html">home</a></li>
+                    <li><a style="color: #eb2d2d; font-weight: bold">vendas</a></li>
                     <li><a href="about.html">sobre</a></li>
                     <li><a href="#" goto="contact" class="contact-selected">contato</a></li>
                 </ul>
@@ -34,8 +33,8 @@
 
             <nav class="mobile-menu menu-style">
                 <ul>
-                    <li><a>home</a></li>
-                    <li><a href="sales.html">vendas</a></li>
+                    <li><a href="index.html">home</a></li>
+                    <li><a>vendas</a></li>
                     <li><a href="about.html">sobre</a></li>
                     <li><a href="#" goto="contact">contato</a></li>
                 </ul>
@@ -43,19 +42,8 @@
         </div>
     </header>
 
-    
-        <div class="container">
-            <div class="banner-text">
-                <div class="banner-text-item">consultoria</div>
-                <div class="banner-text-item">compra</div>
-                <div class="banner-text-item">venda</div>
-                <div class="banner-text-item">email@email.com</div>
-            </div>
-        </div>
-    </section>
-
-    <section class="featured">
-        <h2 class="title-style">destaques</h2>
+    <section class="sales">
+        <h2 class="title-style">Vendas</h2>
 
         <div class="container">
             <div class="featured-vehicle" id="car01">
@@ -71,8 +59,7 @@
             </div>
 
             <div class="featured-vehicle" id="car02">
-                <div class="featured-vehicle-img"
-                    style="background-image: url('images/car02_thumb.jpg');"></div>
+                <div class="featured-vehicle-img" style="background-image: url('images/car02_thumb.jpg');"></div>
                 <div class="featured-vehicle-info">
                     <h3><span class="brand">Ferrari</span> <span class="model">F430 Scuderia</span></h3>
                     <p><span class="version">4.3 V8, 510cv</span>, <span class="fuel">Gasolina</span>, <span
@@ -83,12 +70,44 @@
             </div>
 
             <div class="featured-vehicle" id="car03">
-                <div class="featured-vehicle-img"
-                    style="background-image: url('images/car03_thumb.jpg');"></div>
+                <div class="featured-vehicle-img" style="background-image: url('images/car03_thumb.jpg');"></div>
                 <div class="featured-vehicle-info">
                     <h3><span class="brand">Lamborghini</span> <span class="model">Aventador</span></h3>
                     <p><span class="version">6.5 V12, 750cv</span>, <span class="fuel">Gasolina</span>, <span
                             class="year">2017</span></p>
+                    <p class="price">Sob Consulta</p>
+                </div>
+            </div>
+
+            <div class="featured-vehicle" id="car04">
+                <div class="featured-vehicle-img" style="background-image: url('images/car04_thumb.jpg');">
+                </div>
+                <div class="featured-vehicle-info">
+                    <h3><span class="brand">Koenigsegg</span> <span class="model">Regera</span></h3>
+                    <p><span class="version">5.0 V8, 1521cv</span>, <span class="fuel">Motor Híbrido</span>, <span
+                            class="year">2016</span></p>
+                    <p class="price">Sob Consulta</p>
+
+                </div>
+            </div>
+
+            <div class="featured-vehicle" id="car05">
+                <div class="featured-vehicle-img" style="background-image: url('images/car05_thumb.jpg');"></div>
+                <div class="featured-vehicle-info">
+                    <h3><span class="brand">Ferrari</span> <span class="model">F430 Scuderia Spider</span></h3>
+                    <p><span class="version">4.3 V8, 510cv</span>, <span class="fuel">Gasolina</span>, <span
+                            class="year">2008</span></p>
+                    <p class="price">Sob Consulta</p>
+
+                </div>
+            </div>
+
+            <div class="featured-vehicle" id="car06">
+                <div class="featured-vehicle-img" style="background-image: url('images/car06_thumb.jpg');"></div>
+                <div class="featured-vehicle-info">
+                    <h3><span class="brand">Lamborghini</span> <span class="model">Aventador SVJ</span></h3>
+                    <p><span class="version">6.5 V12, 770cv</span>, <span class="fuel">Gasolina</span>, <span
+                            class="year">2018</span></p>
                     <p class="price">Sob Consulta</p>
                 </div>
             </div>
@@ -146,71 +165,15 @@
         </div>
     </div>
 
-    <section class="services-and-testimonials">
-        <div class="left-box">
-            <h2>Serviços</h2>
-            <ul>
-                <li>Compra</li>
-                <li>Venda</li>
-                <li>Consultoria</li>
-                <li>Importação</li>
-            </ul>
-        </div>
-
-        <div class="right-box">
-            <h2>Depoimentos</h2>
-            <div class="testimonial-item">
-                <p>
-                    “Serviço de excelência, me buscou no aeroporto e garantiu toda comodidade e conforto no almoço, no
-                    transfer, na visita ao veículo e durante o test-drive.”
-                </p>
-
-                <div class="testimonial-nav">
-                    <div class="testimonial-arrows">
-                        <img src="images/arrow-left.png" alt="ícone seta">
-                        <img src="images/arrow-right.png" alt="ícone seta">
-                    </div>
-                    <div class="testimonial-name">
-                        <p>Lorem da Silva</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <h2 class="title-style">contato</h2>
-
-        <form>
-            <div class="input-wraper w100">
-                <input name="name" type="text" placeholder="*Seu nome" required>
-            </div>
-            <div class="input-wraper w50">
-                <input name="email" type="email" placeholder="*Seu e-mail" required>
-            </div>
-            <div class="input-wraper w50">
-                <input name="phone" type="number" placeholder="*Seu telefone" required>
-            </div>
-            <div class="input-wraper w100">
-                <textarea name="message" placeholder="Deixe sua mensagem"></textarea>
-            </div>
-            <div class="input-wraper w100">
-                <input class="btn" type="submit" value="Enviar">
-            </div>
-
-            <div class="clear"></div>
-        </form>
-    </section>
-
     <footer>
         <div class="container">
 
             <nav class="desktop-menu menu-style">
                 <ul>
-                    <li><a href="#" class="to-top top-selected" style="color: #eb2d2d; font-weight: bold">home</a></li>
-                    <li><a href="sales.html">vendas</a></li>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="#" class="to-top" style="color: #eb2d2d; font-weight: bold">vendas</a></li>
                     <li><a href="about.html">sobre</a></li>
-                    <li><a href="#" class="to-contact contact-selected">contato</a></li>
+                    <li><a href="#" goto="contact">contato</a></li>
                 </ul>
             </nav>
 
