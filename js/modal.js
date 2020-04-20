@@ -26,6 +26,7 @@ for (let vehicle of vehicles) {
 
 document.querySelector('.close-modal').addEventListener('click', function() {
     modalOverlay.classList.remove('active')
+    modalOverlay.querySelector('img').src = '';
 })
 
 document.querySelector('.interest').addEventListener('click', function() {
