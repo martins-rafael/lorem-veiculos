@@ -13,7 +13,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -33,8 +34,12 @@ body {
 }
 
 header .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 30px 2%;
 }
 
@@ -70,6 +75,8 @@ header .logo img {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -124,13 +131,14 @@ nav.mobile-menu ul li {
 }
 
 nav.desktop-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 nav.desktop-menu ul li {
     padding: 30px 20px;
 }
-
 
 /*==================
 ==== index.html ====
@@ -218,15 +226,26 @@ section.featured {
 }
 
 section.featured .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 80px;
 }
 
 .featured-vehicle {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 33%;
 }
 
@@ -235,7 +254,8 @@ section.featured .container {
     width: 80%;
     background-size: 100% 100%;
     border-radius: 5px 5px 0 0;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
 
@@ -245,8 +265,11 @@ section.featured .container {
     color: var(--color-paper);
     background-color: var(--color-racing-red);
     border-radius: 0 0 3px 5px;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+    -webkit-transition: 0.5S;
+    -o-transition: 0.5S;
     transition: 0.5S;
 }
 
@@ -264,7 +287,6 @@ section.featured .container {
     background-color: var(--color-soft-dark);
 }
 
-
 /*=============
 ==== MODAL ====
 =============*/
@@ -277,6 +299,8 @@ section.featured .container {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     opacity: 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
     visibility: hidden;
 }
@@ -314,9 +338,14 @@ section.featured .container {
 
 .modal-content-wraper {
     height: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 2%;
 }
 
@@ -339,15 +368,26 @@ section.featured .container {
 ===================*/
 
 section.services-and-testimonials {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .left-box,
 .right-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 90px;
     width: 50%;
     color: var(--color-paper);
@@ -381,8 +421,12 @@ section.services-and-testimonials {
 }
 
 .testimonial-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-top: 20px;
 }
 
@@ -390,7 +434,6 @@ section.services-and-testimonials {
     margin: 0 10px;
     cursor: pointer;
 }
-
 
 /*===============
 ==== CONTATO ====
@@ -465,8 +508,12 @@ footer {
 }
 
 footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     background-color: var(--color-soft-dark);
 }
 
@@ -486,9 +533,14 @@ section.sales {
 }
 
 section.sales .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 80px;
 }
 
@@ -530,6 +582,8 @@ section.about .dealership-description {
 }
 
 .owner-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 40px;
 }
@@ -573,8 +627,13 @@ section.about .dealership-description {
     }
 
     section.featured .container {
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .featured-vehicle {
@@ -584,14 +643,24 @@ section.about .dealership-description {
 
     .modal-content-wraper {
         height: 90%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         padding: 2%;
     }
 
     section.services-and-testimonials {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .left-box,
@@ -637,8 +706,13 @@ section.about .dealership-description {
     }
 
     .owner-description {
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .owner-img {
