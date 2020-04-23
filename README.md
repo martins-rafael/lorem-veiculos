@@ -28,7 +28,6 @@ Versão personalizada do projeto 05 desenvolvido no curso Front-End da Danki Cod
 ## :computer: Tecnologias
 - [HTML](https://devdocs.io/html/)
 - [CSS](https://devdocs.io/css/)
-- [Responsive Web Design](https://www.w3schools.com/html/html_responsive.asp)
 - [Javascript](https://devdocs.io/javascript/)
 - [JQuery](https://jquery.com/)
 
