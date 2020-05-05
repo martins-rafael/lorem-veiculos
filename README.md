@@ -5,13 +5,13 @@
 <p align="center">Página de Venda de Automóveis.</p>
 
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/martins-rafael/lorem-ipsum-veiculos?color=%2304D361">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/martins-rafael/lorem-ipsum-veiculos?color=eb2d2d">
   <a href="https://opensource.org/licenses/MIT">
     <img alt="License" src="https://img.shields.io/badge/license-MIT-eb2d2d">
   </a>
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/martins-rafael/lorem-ipsum-veiculos">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/martins-rafael/lorem-ipsum-veiculos?color=eb2d2d">
   <a href="https://github.com/martins-rafael/lorem-ipsum-veiculos/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/martins-rafael/lorem-ipsum-veiculos">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/martins-rafael/lorem-ipsum-veiculos?color=eb2d2d">
   </a>
 </p>
 
