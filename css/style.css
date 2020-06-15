@@ -18,6 +18,18 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-racing-red);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #f50c0c;
+}
+
 html,
 body {
     height: 100%;
