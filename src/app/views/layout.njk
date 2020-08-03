@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Página de Venda de Automóveis">
+    <meta name="author" content="Rafael Martins">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
+    <!--[if IE]><link rel="shortcut icon" href="images/favicon.ico"><![endif]-->
+    <link rel="icon" href="images/favicon.ico">
+
+    {% block head %}
+        <title>Lorem Ipsum Veículos</title>
+    {% endblock %}
+</head>
+
+<body>
+    {% block content %}
+    {% endblock %}
+
+    {% include "parts/footer.njk" %}
+    {% include "parts/scripts.njk" %}
+</body>
+</html>

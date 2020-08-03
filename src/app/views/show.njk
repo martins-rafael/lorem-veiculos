@@ -1,0 +1,49 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>{{vehicle.name}} | Lorem Ipsum Veículos</title>
+{% endblock %}
+
+
+{% block content %}
+    {% include "parts/header.njk" %}
+
+    <section class="vehicle">
+        <h2 class="title-style">{{vehicle.name}}</h2>
+
+        <div class="container">
+            <div class="vehicle-photo">
+                <img src="{{vehicle.image}}" alt="foto de {{vehicle.name}}">
+            </div>
+
+            <div class="vehicle-info">
+                <div class="item">
+                    <div>Marca</div>
+                    <div>{{vehicle.manufacturer}}</div>
+                </div>
+                <div class="item">
+                    <div>Modelo</div>
+                    <div>{{vehicle.model}}</div>
+                </div>
+                <div class="item">
+                    <div>Versão</div>
+                    <div>{{vehicle.version}}</div>
+                </div>
+                <div class="item">
+                    <div>Ano</div>
+                    <div>{{vehicle.year}}</div>
+                </div>
+                <div class="item">
+                    <div>Combustível</div>
+                    <div>{{vehicle.fuel}}</div>
+                </div>
+                <div class="item">
+                    <div>Preço</div>
+                    <div>{{vehicle.price}}</div>
+                </div>
+                
+                <button href="#" class="btn" goto="contact">Tenho Interesse</button>
+            </div>
+        </div>
+    </section>
+{% endblock %}

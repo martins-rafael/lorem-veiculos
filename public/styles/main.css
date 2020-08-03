@@ -2,7 +2,6 @@
 ==== GERAL ====
 =============*/
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 :root {
     --color-soft-dark: #192123;
     --color-paper: #f5f5f5;
@@ -92,6 +91,12 @@ header .logo img {
     transition: 0.5s;
 }
 
+a.btn {
+    display: block;
+    line-height: 28px;
+    text-decoration: none;
+}
+
 .btn:hover {
     background-color: var(--color-racing-red);
 }
@@ -113,6 +118,17 @@ nav.menu-style ul li {
 nav.menu-style ul li a {
     text-decoration: none;
     color: var(--color-paper);
+    transition: .3s;
+}
+
+nav.menu-style ul li a:hover {
+    font-weight: bold;
+    color: var(--color-racing-red);
+}
+
+nav.menu-style ul li a.active {
+    font-weight: bold;
+    color: var(--color-racing-red);
 }
 
 nav.mobile-menu {
@@ -151,10 +167,6 @@ nav.desktop-menu ul {
 nav.desktop-menu ul li {
     padding: 30px 20px;
 }
-
-/*==================
-==== index.html ====
-==================*/
 
 /*==============
 ==== BANNER ====
@@ -237,10 +249,13 @@ section.featured {
     background-color: var(--color-white-bg);
 }
 
-section.featured .container {
+section.featured .container,
+section.sales .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -297,82 +312,6 @@ section.featured .container {
 .featured-vehicle-img:hover + .featured-vehicle-info,
 .featured-vehicle-info:hover {
     background-color: var(--color-soft-dark);
-}
-
-/*=============
-==== MODAL ====
-=============*/
-
-.modal-overlay {
-    position: fixed;
-    top: 0;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    opacity: 0;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-    visibility: hidden;
-}
-
-.modal {
-    position: relative;
-    margin: 5vh auto;
-    width: 90%;
-    height: 90%;
-    background-color: rgba(255, 255, 255, 0.85);
-    border-radius: 5px;
-}
-
-.modal .close-modal {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    color: var(--color-soft-dark);
-    cursor: pointer;
-}
-
-.modal .material-icons:hover {
-    color: var(--color-racing-red);
-}
-
-.modal-content {
-    height: 90%;
-}
-
-.modal-content h2 {
-    margin: 10px 0;
-    padding: 20px;
-    border: none;
-}
-
-.modal-content-wraper {
-    height: 90%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 2%;
-}
-
-.modal-content-wraper img {
-    width: 60%;
-    border-radius: 3px;
-}
-
-.modal-content-right .btn {
-    margin: 35px;
-}
-
-.modal-overlay.active {
-    opacity: 1;
-    visibility: visible;
 }
 
 /*===================
@@ -534,35 +473,73 @@ footer p {
     color: var(--color-paper);
 }
 
-/*==================
-==== sales.html ====
-==================*/
+/*=============
+==== SALES ====
+=============*/
 
-section.sales {
-    padding: 0 2% 90px 2%;
+section.sales,
+section.vehicle {
+    padding: 0 2% 40px;
     min-height: 90%;
     background-color: var(--color-white-bg);
-}
-
-section.sales .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-top: 80px;
 }
 
 section.sales .featured-vehicle {
     margin-bottom: 40px;
 }
 
-/*==================
-==== about.html ====
-==================*/
+section.vehicle .container {
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.vehicle-photo {
+    padding: 32px;
+}
+
+.vehicle-photo img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.vehicle-info {
+    padding: 32px;
+}
+
+.vehicle-info .item {
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.vehicle-info .item:last-of-type {
+    margin-bottom: 32px;
+}
+
+.vehicle-info .item div:nth-of-type(1) {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 24px;
+    color: var(--color-racing-red);
+}
+
+.vehicle-info .item div:nth-of-type(2) {
+    text-indent: 4px;
+    color: #555;
+}
+
+.vehicle-info button {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: 50px;
+}
+
+/*=============
+==== ABOUT ====
+=============*/
 
 section.about {
     padding: 0 2% 90px 2%;
@@ -688,6 +665,15 @@ section.about .dealership-description {
         width: 100%;
         text-align: center;
     }
+
+    section.vehicle .container {
+        grid-template-columns: 1fr;
+    }
+
+    .vehicle-photo, 
+    .vehicle-info {
+        padding: 8px;
+    }
 }
 
 @media screen and (max-width: 580px) {
@@ -733,7 +719,6 @@ section.about .dealership-description {
     }
     
     .owner-description p {
-        
         margin-left: 0;
         width: 100%;
     }

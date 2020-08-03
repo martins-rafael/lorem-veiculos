@@ -1,0 +1,26 @@
+{
+  "name": "lorem-ipsum-veiculos",
+  "version": "1.0.0",
+  "description": "Página de Venda de Automóveis.",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martins-rafael/lorem-ipsum-veiculos.git"
+  },
+  "author": "Rafael Martins",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/martins-rafael/lorem-ipsum-veiculos/issues"
+  },
+  "homepage": "https://github.com/martins-rafael/lorem-ipsum-veiculos#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
