@@ -16,15 +16,17 @@
 
 <br>
 
-<div align="center">
-  <img src="screenshot.png" alt="screenshot" >
-</div>
-
-<br>
+<p align="center">
+  <img src=".github/screenshot.png" alt="Screenshot" >
+</p>
 
 ## :red_car: Sobre
 
 Versão personalizada do projeto #5 desenvolvido no curso Front-End da Danki Code, com o intuito de exercitar o conteúdo aprendido. Além do front-end que foi lecionado no curso, adicionei o back-end da página utilizando NodeJS.
+
+<p align="center">
+  <img src=".github/demo.gif" alt="Demo" >
+</p>
 
 <br>
 
@@ -39,42 +41,28 @@ Versão personalizada do projeto #5 desenvolvido no curso Front-End da Danki Cod
 
 <br>
 
-## Instalação e uso
+## :wrench: Instalação e uso
 
 Para rodar a aplicação, você precisa instalar o [Node](https://nodejs.org/en/).
 
 Siga os passos abaixo:
 
-1) Abra um terminal e copie este repositório com o comando
-    ```
-    git clone https://github.com/martins-rafael/lorem-ipsum-veiculos.git
-    ```
-    ou use a opção de download.
+```bash
+# Abra um terminal e copie este repositório com o comando
+$ git clone https://github.com/martins-rafael/lorem-ipsum-veiculos.git
+# ou use a opção de download.
 
-<br>
+# Entre na pasta 
+$ cd lorem-ipsum-veiculos
 
-2) Entre na pasta com 
-    ```
-    cd lorem-ipsum-veiculos
-    ```
+# Instale as dependências
+$ npm install
 
-<br>
+# Rode a aplicação
+$ npm start
 
-3) Instale as dependências
-    ```
-    npm install
-    ```
-
-<br>
-
-4) Rode a aplicação
-    ```
-    npm start
-    ```
-
-<br>
-
-5) Acesse http://localhost:3000 no seu navagador.
+# Acesse http://localhost:3000 no seu navagador.
+```
 
 <br>
 
