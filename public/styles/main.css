@@ -48,10 +48,11 @@ header .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    align-items: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 30px 2%;
+    padding: 0 2%;
 }
 
 header .logo {
@@ -59,8 +60,8 @@ header .logo {
 }
 
 header .logo img {
-    width: 183px;
-    height: 100px;
+    width: 180px;
+    height: 150px;
 }
 
 .dark-header {

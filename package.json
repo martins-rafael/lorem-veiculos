@@ -18,7 +18,8 @@
   "homepage": "https://github.com/martins-rafael/lorem-ipsum-veiculos#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "nunjucks": "^3.2.2"
+    "nunjucks": "^3.2.2",
+    "pg": "^8.3.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
