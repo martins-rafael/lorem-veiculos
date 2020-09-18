@@ -1,0 +1,232 @@
+:root {
+    --color-soft-dark: #192123;
+    --color-paper: #f5f5f5;
+    --color-racing-red: #eb2d2d;
+    --color-white-bg: #ebeced;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-racing-red);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #f50c0c;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--color-white-bg);
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 2%;
+    width: 100%;
+    max-width: 1200px;
+}
+
+header {
+    background-color: var(--color-soft-dark);
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+}
+
+header .logo img {
+    width: 120px;
+    height: 90px;
+}
+
+.title-style {
+    padding: 40px;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: var(--color-soft-dark);
+}
+
+.btn {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--color-paper);
+    background-color: var(--color-racing-red);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+a.btn {
+    display: block;
+    line-height: 28px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: var(--color-soft-dark);
+}
+
+/*=================
+==== NAVEGAÇÃO ====
+=================*/
+
+nav.menu-style ul {
+    list-style: none;
+}
+
+nav.menu-style ul li {
+    font-size: 16px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+nav.menu-style ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-paper);
+    transition: .3s;
+}
+
+nav.menu-style ul li a i {
+    margin-right: 4px;
+}
+
+nav.menu-style ul li a:hover {
+    color: var(--color-racing-red);
+}
+
+nav.menu-style ul li a.active {
+    font-weight: bold;
+    color: var(--color-racing-red);
+}
+
+nav.mobile-menu {
+    display: none;
+    margin-top: 30px;
+    margin-right: 20px;
+    width: 32px;
+    height: 32px;
+    background-image: url('../images/menu.png');
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+nav.mobile-menu ul {
+    position: absolute;
+    left: 0;
+    top: 90px;
+    display: none;
+    width: 100%;
+    text-align: center;
+    background-color: var(--color-soft-dark);
+    border-bottom: 4px solid var(--color-racing-red);
+    opacity: 0.9;
+}
+
+nav.mobile-menu ul li {
+    padding: 20px;
+}
+
+nav.desktop-menu ul {
+    display: flex;
+}
+
+nav.desktop-menu ul li {
+    padding: 20px;
+}
+
+nav.admin-menu {
+    width: 100%;
+}
+
+nav.admin-menu ul {
+    justify-content: flex-end;
+}
+
+/*==============
+==== FOOTER ====
+==============*/
+
+footer {
+    margin-top: auto;
+    background-color: var(--color-soft-dark);
+    border-top: 5px solid var(--color-racing-red);
+}
+
+footer p {
+    padding: 30px;
+    text-align: center;
+    color: var(--color-paper);
+}
+
+/*================
+==== DESTAQUE ====
+================*/
+
+section.featured .vehicles,
+section.stock .vehicles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.vehicle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 32px;
+    width: 33%;
+}
+
+.vehicle .vehicle-img {
+    padding-top: 40%;
+    width: 80%;
+    background-size: 100% 100%;
+    border-radius: 4px 4px 0 0;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.vehicle-info {
+    padding: 20px;
+    width: 80%;
+    color: var(--color-paper);
+    background-color: var(--color-racing-red);
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.5S;
+}
+
+.vehicle-info h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.vehicle-info p {
+    font-size: 14px;
+}
+
+.vehicle-img:hover+.vehicle-info, .vehicle-info:hover {
+    background-color: var(--color-soft-dark);
+}

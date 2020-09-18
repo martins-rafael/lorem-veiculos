@@ -1,9 +1,9 @@
 {% for vehicle in vehicles %}
-    <div class="featured-vehicle" id="{{vehicle.id}}">
-        <div class="featured-vehicle-img"
+    <div class="vehicle" id="{{vehicle.id}}">
+        <div class="vehicle-img"
             style="background-image: url({{vehicle.image}});"
         ></div>
-        <div class="featured-vehicle-info">
+        <div class="vehicle-info">
             <h3>{{vehicle.name}}</h3>
             <p>{{vehicle.version}}, {{vehicle.fuel}}, {{vehicle.year}}</p>
             <p>{{vehicle.price}}</p>

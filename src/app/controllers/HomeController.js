@@ -1,16 +1,24 @@
-const Vehicle = require('../model/Veihcle');
+const Vehicle = require('../model/Vehicle');
 const Message = require('../model/Message');
+const { formatPrice } = require('../../lib/utils');
 
 module.exports = {
     async home(req, res) {
         const results = await Vehicle.all();
         const recentlyAdded = results.rows.slice(0, 3);
-        return res.render('index', { vehicles: recentlyAdded });
+
+        return res.render('main/index', { vehicles: recentlyAdded });
     },
-    async sales(req, res) {
+    async stock(req, res) {
         const results = await Vehicle.all();
-        const vehicles = results.rows;
-        return res.render('sales', { vehicles });
+        let vehicles = results.rows;
+
+        vehicles = vehicles.map(vehicle => {
+            vehicle.price = formatPrice(vehicle.price);
+            return vehicle;
+        });
+
+        return res.render('main/stock', { vehicles });
     },
     async show(req, res) {
         const { id } = req.params;
@@ -19,10 +27,12 @@ module.exports = {
 
         if (!vehicle) return res.send('Veículo não encontrado!');
 
+        vehicle.price = formatPrice(vehicle.price);
+
         return res.render('show', { vehicle });
     },
     about(req, res) {
-        return res.render('about');
+        return res.render('main/about');
     },
     async post(req, res) {
         const keys = Object.keys(req.body);

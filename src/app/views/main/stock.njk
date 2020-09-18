@@ -1,0 +1,17 @@
+{% extends "templates/layouts/main.njk" %}
+
+{% block head %}
+    <title>Estoque | Fast Cars</title>
+{% endblock %}
+
+
+{% block content %}
+
+    <section class="stock container">
+        <h2 class="title-style">Nosso estoque</h2>
+
+        <div class="vehicles">
+           {% include "templates/includes/vehicles.njk" %}
+        </div>
+    </section>
+{% endblock %}

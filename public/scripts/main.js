@@ -2,11 +2,6 @@ const currentPage = location.pathname;
 const header = document.querySelector('header');
 const menuItens = document.querySelectorAll('.desktop-menu a');
 
-// Dark header style
-if (currentPage.includes('/sales') || currentPage == '/about') {
-    header.classList.add('dark-header');
-}
-
 // Active page
 menuItens.forEach(item => {
     if (currentPage.includes(item.getAttribute('href'))) {
@@ -22,10 +17,10 @@ if (form) {
 }
 
 // Redirect to vehicle page
-const vehicles = document.querySelectorAll('.featured-vehicle');
+const vehicles = document.querySelectorAll('.vehicle');
 vehicles.forEach(vehicle => {
     vehicle.addEventListener('click', () => {
         const id = vehicle.getAttribute('id');
-        window.location.href = `sales/${id}`;
+        window.location.href = `stock/${id}`;
     });
 });
