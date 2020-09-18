@@ -1,0 +1,17 @@
+{% extends "templates/layouts/admin.njk" %}
+
+{% block content %}
+    <section class="container form">
+        <form method="POST" action="/vehicles" enctype="multpart/form-data">
+            <div class="header">
+                <h3>Cadastrar Veículo</h3>
+            </div>
+
+            <div class="fields">
+                {% include "templates/includes/vehicles-fields.njk" %}
+            </div>
+
+            <button class="btn" type="submit">Salvar</button>
+        </form>
+    </section>
+{% endblock%}
