@@ -1,16 +1,15 @@
 const express = require('express');
 const routes = express.Router();
-const HomeController = require('./app/controllers/HomeController');
-const VehicleController = require('./app/controllers/VehicleController');
+const vehicles = require('./app/controllers/vehicles');
 
-// Main site
-routes.get('/', HomeController.home);
-routes.get('/stock', HomeController.stock);
-routes.get('/stock/:id', HomeController.show);
-routes.get('/about', HomeController.about);
-routes.post('/contact', HomeController.post);
+routes.get('/', (req, res) => {
+    return res.redirect('/index');
+});
 
-// Admin
-routes.get('/vehicles/create', VehicleController.create);
+routes.get('/index', vehicles.home);
+routes.get('/sales', vehicles.sales);
+routes.get('/sales/:id', vehicles.show);
+routes.get('/about', vehicles.about);
+routes.post('/index', vehicles.post);
 
 module.exports = routes;

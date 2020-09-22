@@ -1,0 +1,34 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+    <section class="banner">
+        {% include "parts/header.njk" %}
+
+        <div class="container">
+            <div class="banner-text">
+                <div class="banner-text-item">consultoria</div>
+                <div class="banner-text-item">compra</div>
+                <div class="banner-text-item">venda</div>
+                <div class="banner-text-item">email@email.com</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured">
+        <h2 class="title-style">destaques</h2>
+
+        <div class="container">
+            {% include "parts/vehicles.njk" %}
+        </div>
+    </section>
+
+    <section class="services-and-testimonials">
+        {% include "parts/services.njk" %}
+        {% include "parts/testimonials.njk" %}
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="title-style">contato</h2>
+        {% include "parts/form.njk" %}
+    </section>
+{% endblock %}
